@@ -1,28 +1,3 @@
-#server:
-#  port: 8080
-#datasource:
-#  schema: 'reaction_service'
-#  host: 'localhost:5432'
-#  url: 'jdbc:postgresql://${datasource.host}/${datasource.schema}'
-#  driver-class-name: 'org.postgresql.Driver'
-#  ddl-auto: update
-#  username: 'postgres'
-#  password: 'postgres'
-#
-#spring:
-#  jpa:
-#    properties:
-#      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
-#      hibernate.show_sql: true
-#      hibernate.format_sql: true
-#      hibernate.type: trace
-#    hibernate:
-#      ddl-auto: ${datasource.ddl-auto}
-#    datasource:
-#      url: '${datasource.url}'
-#      username: '${datasource.username}'
-#      password: '${datasource.password}'
-
 test:
   reaction:
     exchange-rate:
@@ -33,13 +8,3 @@ test:
     service:
       exchange-rates-service: https://openexchangerates.org/api
       giphy-service: https://api.giphy.com/v1/gifs
-
-
-feign:
-  client:
-    config:
-      profile-service-client:
-        connectTimeout: 9000000
-        readTimeout: 9000000
-#    feign.client.config.default.connectTimeout: 160000000
-#    feign.client.config.default.readTimeout: 160000000
