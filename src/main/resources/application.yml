@@ -1,10 +1,3 @@
-test:
-  reaction:
-    exchange-rate:
-      app-id: 319eb1736e7349c2a14f7bfc62eeb699
-    giphy:
-      api-key: 8GgqAO98oh7wcrxkula6DUBIfz1ut9yq
-
-    service:
-      exchange-rates-service: https://openexchangerates.org/api
-      giphy-service: https://api.giphy.com/v1/gifs
+spring:
+  profiles:
+    active: local
